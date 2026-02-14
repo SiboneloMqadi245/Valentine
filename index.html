@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts (animated later via CSS) -->
+    <div class="hearts"></div>
+
+    <main class="container">
+        <h1 class="title">Happy Valentine's Day, <span id="name">Nomnotho</span>!</h1>
+        
+        <!-- Photo Gallery -->
+        <section class="gallery">
+            <h2>Our Memories</h2>
+            <div class="photo-grid">
+                <img src="image1.jpg" alt="Memory 1" class="gallery-img">
+                <img src="image2.jpg" alt="Memory 2" class="gallery-img">
+                <img src="image3.jpg" alt="Memory 3" class="gallery-img">
+                <img src="image4.jpg" alt="Memory 4" class="gallery-img">
+				<img src="image5.jpg" alt="Memory 4" class="gallery-img">
+				<img src="image6.jpg" alt="Memory 4" class="gallery-img">
+            </div>
+        </section>
+
+        <!-- Love Quotes (randomly displayed) -->
+        <section class="quotes">
+            <h2>Quote of the Moment</h2>
+            <div id="quote-display" class="quote-box">Click the button for a sweet quote!</div>
+            <button id="new-quote" class="btn">💌 New Quote</button>
+        </section>
+
+        <!-- Secret Message Reveal -->
+        <section class="secret">
+            <h2>A Special Message</h2>
+            <button id="reveal-btn" class="btn">💖 Reveal</button>
+            <p id="secret-message" class="hidden-message"></p>
+        </section>
+		
+		<!-- Music Player Section -->
+        <section class="music-player">
+            <h2>🎵 Our Song</h2>
+            <audio id="love-song" loop>
+                <source src="Sabrina.mp3" type="audio/mpeg">
+            </audio>
+            <button id="play-pause" class="btn">❤️ Play Music</button>
+            <div class="volume-control">
+                <label for="volume">Volume</label>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+            </div>
+        </section>
+		
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
